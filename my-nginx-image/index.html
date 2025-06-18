@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Docker Project</title>
+    <style>
+        body {
+            background-color: rgb(49, 214, 220);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 0;
+            color: #eaf4f4;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        #date-time {
+            font-weight: bold;
+            color: #f5fffa;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .colorful-name span {
+            font-size: 2em;
+            font-weight: bold;
+            padding: 0 3px;
+            display: inline-block;
+        }
+
+        .h { color: #e74c3c; }    /* Red */
+        .a { color: #f39c12; }    /* Orange */
+        .m { color: #2ecc71; }    /* Green */
+        .z { color: #3498db; }    /* Blue */
+        .a2 { color: #9b59b6; }   /* Purple */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <h2>Tahreer Alshaikh Hasan</h2>
+        <p>This is my <strong>Docker Project</strong>.</p>
+        <p>Today's Date and Time is: <span id="date-time"></span></p>
+        <p>
+            hello 
+            <span class="colorful-name">
+                <span class="h">H</span>
+                <span class="a">A</span>
+                <span class="m">M</span>
+                <span class="z">Z</span>
+                <span class="a2">A</span>
+            </span>
+        </p>
+    </div>
+
+    <script>
+        var dateAndTime = new Date();
+        document.getElementById('date-time').textContent = dateAndTime.toLocaleString();
+    </script>
+</body>
+</html>
